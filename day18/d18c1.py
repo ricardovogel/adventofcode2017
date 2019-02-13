@@ -63,7 +63,7 @@ with open("day18/input.txt") as f:
     for l in f:
         inst.append(l)
 
-while pc >= 0 and pc <= len(inst):
+while pc >= 0 and pc < len(inst):
     curinst = inst[pc]
     curinst = curinst.split()
     if len(curinst) is 2:
